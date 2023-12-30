@@ -2,7 +2,7 @@ type AssignmentsProps = {
   assignmentFiles?: string[];
 };
 
-function Assignments(props: AssignmentsProps) {
+function Assignments(props: Readonly<Props>) {
   if (!props.assignmentFiles?.length) {
     return (
       <div className="prose">
